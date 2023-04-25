@@ -95,9 +95,9 @@ async function getComment(id) {
   }
 }
 // 사용자 등록 시
-document.getElementById('user-form').addEventListener('submit', async (e) => {
+document.getElementById('user-form').addEventListener('submit', async (e) => { //e는 이벤트 객체, 이벤트 객체 안에는 발생한 다양한 정보가 담겨 있다.
   e.preventDefault();
-  const name = e.target.username.value;
+  const name = e.target.username.value; //target 이벤트가 발생한 요소
   const age = e.target.age.value;
   const married = e.target.married.checked;
   if (!name) {
